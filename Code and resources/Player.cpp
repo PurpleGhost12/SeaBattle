@@ -84,7 +84,7 @@ bool Player::UpdateSetShip(sf::Vector2f a, MouseInput& mstate, bool random, bool
 		}
 		sf::Vector2f p = m_fleet.GetCoordsShip((int)now_move);
 		//std::cout << "sprite " << p.x << " " << p.y << std::endl;
-		dX = a.x - p.x;//делаем разность между позицией курсора и спрайта.для корректировки нажатия
+		dX = a.x - p.x;//making a difference between the cursor position and the sprite.to adjust the click
 		dY = a.y - p.y;
 	}
 	else  

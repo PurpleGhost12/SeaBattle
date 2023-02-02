@@ -29,7 +29,7 @@ bool Computer::UpdateSetShip()
 	return true;
 }
 
-bool Computer::UpdateGameMap(sf::Vector2f a, MouseInput  mstate)//true-ход сделан
+bool Computer::UpdateGameMap(sf::Vector2f a, MouseInput  mstate)//true-the move is made
 {
 	sf::Vector2i m_coords;
 	if (m_map.GetMapCoords(a, m_coords))
@@ -47,7 +47,7 @@ bool Computer::UpdateGameMap(sf::Vector2f a, MouseInput  mstate)//true-ход сдела
 						m_map.GetMapCoords(m_fleet.GetCoordsShip((int)n_ship), m_coords);
 						m_map.KillShip(m_coords, m_fleet.GetTypeShip((int)n_ship));
 					}
-					return false; //когда попадание продолжается ход
+					return false; // when the hit continues the turn
 				}
 				return true;
 			}

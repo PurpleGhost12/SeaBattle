@@ -11,8 +11,8 @@ private:
 
 	struct ship
 	{
-		int type=0; //Тип корабля
-		int live=0; //Жизнь
+		int type=0; //Ship Type
+		int live=0; //Life
 
 		bool wayDown=false;
 

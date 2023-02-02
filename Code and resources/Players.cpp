@@ -81,7 +81,7 @@ int generateNum()
 }
 int Players::GetRandomNumber(int min, int max)
 {
-	// Установить генератор случайных чисел
+	// Set a random number generator
 	srand(time(NULL)+ generateNum());
 	int num = min + rand() % (max - min + 1);
 

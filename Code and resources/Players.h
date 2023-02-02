@@ -48,7 +48,7 @@ public:
 	bool EndShips() { return !m_fleet.HaveAliveShip();}
 
 	virtual bool UpdateSetShip() { return true; };// 
-	virtual bool UpdateGameMap() { return true; };//true-ход сделан
+	virtual bool UpdateGameMap() { return true; };//true-the move is made
 
 	//virtual bool Move() = 0;
 

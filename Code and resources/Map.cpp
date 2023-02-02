@@ -14,7 +14,7 @@ Map::Map(sf:: Vector2f mLocation)
 
 }
 
-bool Map::SetRange(sf::Vector2i A, int type, int& i, int& j, int& k, int& g ) //ставит диапозон
+bool Map::SetRange(sf::Vector2i A, int type, int& i, int& j, int& k, int& g ) ////sets the range
 {
 	if (A.y + type > 10) return false;
 	if (A.x == 0) i = 0;
@@ -53,7 +53,7 @@ bool Map::CheckCeil(sf::Vector2i A, int type, WayShip mway)
 	}
 	return true;
 }
-void Map::Clear(sf::Vector2i A, int type, WayShip mway)//сделать clear дл€ двух положений
+void Map::Clear(sf::Vector2i A, int type, WayShip mway)
 {
 	if (mway== WayShip::DOWN)
 		for (int i = A.y; i < A.y + type; i++)
@@ -67,7 +67,7 @@ void Map::Clear(sf::Vector2i A, int type, WayShip mway)//сделать clear дл€ двух 
 		}
 }
 
-bool Map::SetShip(sf::Vector2i A, Num_Ship num, int type, WayShip mway) //ѕ–ќ¬≈–»“№ ¬Ќ»ћј“≈Ћ№Ќќ
+bool Map::SetShip(sf::Vector2i A, Num_Ship num, int type, WayShip mway) 
 {
 
 		if (!CheckCeil(A, type, mway)) return false;

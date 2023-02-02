@@ -184,7 +184,7 @@ State PlayGame::Update()
 				people->NewGame();
 				computer->NewGame();
 				wasClick = false;
-				now_move = Who::player2; //пока без выбора кто ходит
+				now_move = Who::player2; // while there is no choice who goes
 				BackMenu = false;
 				return State::Menu;
 			}
@@ -265,7 +265,7 @@ State PlayGame::Update()
 			people->NewGame();
 			computer->NewGame();
 			wasClick = false;
-			now_move = Who::player2; //пока без выбора кто ходит
+			now_move = Who::player2; // while there is no choice who goes
 
 			return State::Menu;
 		}

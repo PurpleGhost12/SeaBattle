@@ -178,8 +178,8 @@ private:
 
 public:
     PlayGame(Player* player, Computer* computer);
-    void Input(sf::RenderWindow& mWindow, sf::Event& mevent);//Получаем координаты
-    State Update();//Передаем в класс для обновления
+    void Input(sf::RenderWindow& mWindow, sf::Event& mevent);//Getting the coordinates
+    State Update();//We pass it to the class for updating
     void Draw(sf::RenderWindow& mWindow);
 };
 

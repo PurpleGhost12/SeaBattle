@@ -1,10 +1,10 @@
 #include "Engine.h"
 
 /// <summary>
-/// Конструктор 
-/// 1. Загружаем текстуры
-/// 2. Заполняем const и переменные
-/// 3. Создаем окно
+/// Constructor
+/// 1. Load textures
+/// 2. Fill in const and variables
+/// 3. Create a window
 /// </summary>
 Engine::Engine():comp(sf::Vector2f(77, 113), false),player("name", sf::Vector2f(825, 113), true)
 {
@@ -12,7 +12,7 @@ Engine::Engine():comp(sf::Vector2f(77, 113), false),player("name", sf::Vector2f(
     num_state = 0;
     RegisterGameState();
 
-    /////////////////////////     Создание окна    //////////////////////
+    /////////////////////////     Creating a window    //////////////////////
     Vector2f resolution;
     resolution.x = VideoMode::getDesktopMode().width;
     resolution.y = VideoMode::getDesktopMode().height;
@@ -52,7 +52,7 @@ void Engine::ChangeGameState()
 
 void Engine::start()
 {
-    // Расчет времени
+    // Time calculation
     Clock clock;   
 
 
@@ -66,7 +66,7 @@ void Engine::start()
         bool game=false;
     while (m_Window.isOpen())
     {
-        // Перезапускаем таймер и записываем отмеренное время в dt
+        // Restart the timer and record the measured time in dt
         Time dt = clock.restart();
 
         float dtAsSeconds = dt.asSeconds();
